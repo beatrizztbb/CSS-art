@@ -3,70 +3,42 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>CSS Flag Project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
   <style>
-    /* Write your CSS Code here */
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
 
-    /* red part */ 
-    .flag{
-      width: 900px;
-      height: 600px;
-      background-color: #ce1126;
-      position: relative;
-    }
-
-    /* blue part */ 
-    .flag > div {
-      background-color: #002868;
-      width: 100%;
-      height: 50%;
-      position: absolute;
-      top: 25%
-    }
-
-    p{
-      font-size: 80px;
-      text-align: center;
-      margin: 0px
-    }
-    /* The Flag text  */
-    .flag > p {
-      color: white;
-    }
-
-    /* white circle */
-    div div div {
-      width: 200px;
-      height: 200px;
-      background-color: white;
-      border-radius: 50%;
-      position: absolute;
-      top: 50px;
-      left: 350px;
-    }
-    
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
   </style>
+  <link href="./style.css" rel="stylesheet"/>
 </head>
 
-<!-- 
-  IMPORTANT! Do not change any HTML
-Don't add any classes/ids/elements 
-Use what you know about combining selectors 
-and CSS specificity instead.
-Hint 1: The flag is 900px by 600px and the circle is 200px by 200px.
-Hint 2: You can use CSS inspection to get the colors from
-https://appbrewery.github.io/flag-of-laos/
--->
-
 <body>
-  <div class="flag"> <!-- red div -->
-    <p>The Flag</p>
-    <div> <!-- blue div -->
-      <div> <!-- white circle -->
-        <p>of Laos</p>
+  <!-- Write your HTML here -->
+  <div class="container">
+      <div class="grid">
+        <div class="red item"></div>
+        <div class="white item"></div>
+        <div class="white item"></div>
+        <div class=" white item"></div>
+        <div class="item"></div>
+        <div class="white item"></div>
+        <div class="white item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
       </div>
-    </div>
   </div>
+
 </body>
 
 </html>
